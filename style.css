@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 html {
     height: 100vh;
@@ -35,9 +36,15 @@ body {
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 0 0 2px black;
+
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 4rem;
 }
 
-.calculator-buttons{
+.calculator-buttons-container{
     position: absolute;
     width: 475px;
     height: 400px;
@@ -48,24 +55,25 @@ body {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 15px;
-    font-size: 100em;
 }
 
 .calc-equals{
     grid-column: span 2;
 }
+
 .calc-operator{
     background-color: rgb(255,140,0); 
 }
 .calc-operator:hover{
     background-color: rgb(235,120,0); 
+    /* background-color: rgb(215,100,0);  */
     cursor: pointer;
     box-shadow: 0 0 7.5px black;
 }
 
 .calc-num, .calc-operator, .calc-option{
     color: black;
-    font-size: 1.75rem;
+    font-size: 2rem;
     border-radius: 12.5px;
     border: none;
 }
